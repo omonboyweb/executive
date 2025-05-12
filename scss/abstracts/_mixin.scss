@@ -1,0 +1,38 @@
+@mixin btn-primary {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 182%;
+    color: var(--state-hover);
+    background-color: var(--colors-primary);
+    border-radius: 11px;
+    transition: all 0.3s ease;
+}
+
+@mixin section-title {
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 146%;
+    letter-spacing: -0.01em;
+    color: var(--colors-black);
+}
+
+@mixin description {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 173%;
+    text-align: center;
+    color: #7d7d7d;
+}
+
+@mixin btn-hover {
+    transform: scale(1.1);
+    color: var(--color-hover);
+    background-color: var(--state-hover);
+}
+
+@mixin btn-noborder {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.03em;
+    color: var(--colors-primary);
+}
