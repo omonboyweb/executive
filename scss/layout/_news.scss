@@ -1,0 +1,102 @@
+.news {
+    background-color: #fafafa;
+    padding-top: clamp(50px, 5vw, 102px);
+    padding-bottom: clamp(50px, 5vw, 102px);
+}
+
+.news__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news__title {
+    @include section-title;
+    margin-bottom: clamp(24px, 5vw, 30px);
+}
+
+.news__description {
+    @include description;
+    text-align: center;
+    max-width: 969px;
+    margin-bottom: clamp(60px, 5vw, 119px);
+}
+
+.news__items {
+    width: 100%;
+    display: flex;
+    margin-left: -40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: clamp(60px, 5vw, 120px);
+    row-gap: clamp(25px, 5vw, 35px);
+}
+
+.news__card {
+    overflow: hidden;
+    width: 100%;
+    max-width: 344px;
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 42px 0 rgba(0, 0, 0, 0.1);
+    background: var(--state-hover);
+}
+
+.news__card-content {
+    padding-top: clamp(20px, 5vw, 29px);
+    padding-bottom: clamp(20px, 5vw, 29px);
+    padding-left: clamp(20px, 5vw, 29px);
+    padding-right: clamp(20px, 5vw, 29px);
+    display: flex;
+    flex-direction: column;
+}
+
+.news__card-date {
+    font-weight: 900;
+    font-size: clamp(15px, 5vw, 16px);
+    color: var(--colors-black-2);
+    margin-bottom: 15px;
+    padding-left: 32px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(../../imgs/icons/news-calendar-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 16px;
+        height: 16px;
+        left: 5px;
+        top: calc(50% - 8px);
+    }
+}
+
+.news__card-title {
+    font-weight: 700;
+    font-size: clamp(18px, 5vw, 22px);
+    color: var(--colors-news);
+}
+
+.news__action {
+    @include btn-primary;
+    padding: 10px 70px 10px 30px;
+    position: relative;
+    &:hover {
+        @include btn-hover;
+    }
+}
+
+.news__action::after {
+    position: absolute;
+    content: "";
+    background-image: url(../../imgs/icons/arrow-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    top: calc(50% - 13px);
+    right: 30px;
+}
