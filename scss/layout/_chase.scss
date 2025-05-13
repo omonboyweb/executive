@@ -1,0 +1,48 @@
+.chase {
+    background-color: #fafafa;
+}
+.chase__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: clamp(50px, 5vw, 92px);
+    padding-bottom: clamp(50px, 5vw, 92px);
+}
+
+.chase__title {
+    @include section-title;
+}
+
+.chase__action {
+    @include btn-primary;
+    padding: 12px 60px 12px 25px;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(../../imgs/icons/arrow-icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 26px;
+        height: 26px;
+        top: calc(50% - 13px);
+        right: 20px;
+    }
+
+    &:hover {
+        @include btn-hover;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .chase__block {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .chase__action {
+        padding: 10px 60px 10px 20px;
+        margin-top: clamp(20px, 5vw, 30px);
+    }
+}

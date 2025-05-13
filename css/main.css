@@ -992,7 +992,7 @@ img {
 
 .testimonial {
   padding-top: clamp(50px, 5vw, 115px);
-  padding-bottom: clamp(45px, 5vw, 98px);
+  padding-bottom: clamp(60px, 5vw, 100px);
 }
 
 .testimonial__block {
@@ -1104,4 +1104,78 @@ img {
   line-height: 173%;
   color: #7d7d7d;
   font-size: clamp(15px, 5vw, 18px);
+}
+
+.chase {
+  background-color: #fafafa;
+}
+
+.chase__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: clamp(50px, 5vw, 92px);
+  padding-bottom: clamp(50px, 5vw, 92px);
+}
+
+.chase__title {
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 37px);
+  line-height: 146%;
+  letter-spacing: -0.01em;
+  color: var(--colors-black);
+}
+
+.chase__action {
+  font-weight: 500;
+  font-size: clamp(16px, 5vw, 22px);
+  line-height: 182%;
+  color: var(--state-hover);
+  background-color: var(--colors-primary);
+  border-radius: 11px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 2px solid var(--colors-primary);
+  padding: 12px 60px 12px 25px;
+  position: relative;
+}
+.chase__action::after {
+  position: absolute;
+  content: "";
+  background-image: url(../../imgs/icons/arrow-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+  top: calc(50% - 13px);
+  right: 20px;
+}
+.chase__action:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: var(--color-hover);
+  background-color: var(--state-hover);
+}
+
+@media screen and (max-width: 800px) {
+  .chase__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .chase__action {
+    padding: 10px 60px 10px 20px;
+    margin-top: clamp(20px, 5vw, 30px);
+  }
 }/*# sourceMappingURL=main.css.map */
