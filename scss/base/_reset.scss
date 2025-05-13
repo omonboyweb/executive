@@ -16,6 +16,8 @@ body {
     height: 100%;
     font-family: var(--font-family);
     font-size: 16px;
+    background-color: var(--state-hover);
+    overflow-x: hidden;
 }
 
 ul,
@@ -38,7 +40,7 @@ input {
 }
 
 img {
-    width: 100%;
+    min-width: 100%;
     height: auto;
 }
 
@@ -48,3 +50,4 @@ img {
     margin: 0 auto;
     padding: 0 20px;
 }
+

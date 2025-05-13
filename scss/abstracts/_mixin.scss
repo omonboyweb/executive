@@ -6,6 +6,7 @@
     background-color: var(--colors-primary);
     border-radius: 11px;
     transition: all 0.3s ease;
+    border: 2px solid var(--colors-primary);
 }
 
 @mixin section-title {
