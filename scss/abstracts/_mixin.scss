@@ -1,6 +1,6 @@
 @mixin btn-primary {
     font-weight: 500;
-    font-size: 22px;
+    font-size: clamp(16px, 5vw, 22px);
     line-height: 182%;
     color: var(--state-hover);
     background-color: var(--colors-primary);
@@ -19,7 +19,7 @@
 
 @mixin description {
     font-weight: 500;
-    font-size: clamp(18px, 5vw, 22px);
+    font-size: clamp(15px, 5vw, 22px);
     line-height: 173%;
     color: #7d7d7d;
 }
