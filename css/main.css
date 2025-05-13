@@ -63,7 +63,7 @@ input {
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -911,4 +911,197 @@ img {
 }
 .events__items::-webkit-scrollbar {
   visibility: hidden;
+}
+
+.covered {
+  background-color: #fafafa;
+}
+
+.covered__block {
+  padding-top: clamp(45px, 5vw, 82px);
+  padding-bottom: clamp(45px, 5vw, 82px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.covered__title {
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 37px);
+  line-height: 146%;
+  letter-spacing: -0.01em;
+  color: var(--colors-black);
+  margin-bottom: clamp(20px, 5vw, 25px);
+}
+
+.covered__description {
+  font-weight: 500;
+  font-size: clamp(15px, 5vw, 22px);
+  line-height: 173%;
+  color: #7d7d7d;
+  text-align: center;
+  max-width: 949px;
+  margin-bottom: clamp(20px, 5vw, 70px);
+}
+
+.covered__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow-y: scroll;
+  gap: 46px;
+  padding: 15px;
+}
+
+.covered__items::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.covered__card {
+  padding-bottom: 15px;
+  min-width: 348px;
+}
+
+.covered__card-img {
+  border-radius: 29px;
+  margin-bottom: clamp(20px, 5vw, 27px);
+}
+
+.covered__card-title {
+  font-weight: 900;
+  font-size: clamp(18px, 5vw, 25px);
+  color: #37474f;
+  margin-bottom: 11px;
+}
+
+.covered__card-description {
+  font-weight: 500;
+  font-size: clamp(16px, 5vw, 16px);
+  line-height: 169%;
+  color: rgba(55, 71, 79, 0.72);
+  margin-bottom: clamp(45px, 5vw, 70px);
+}
+
+.testimonial {
+  padding-top: clamp(50px, 5vw, 115px);
+  padding-bottom: clamp(45px, 5vw, 98px);
+}
+
+.testimonial__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial__title {
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 37px);
+  line-height: 146%;
+  letter-spacing: -0.01em;
+  color: var(--colors-black);
+  margin-bottom: 20px, 5vw, 25px;
+}
+
+.testimonial__description {
+  font-weight: 500;
+  font-size: clamp(15px, 5vw, 22px);
+  line-height: 173%;
+  color: #7d7d7d;
+  text-align: center;
+  margin-bottom: clamp(50px, 5vw, 142px);
+}
+
+.testimonial__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  gap: clamp(30px, 5vw, 60px);
+  margin-bottom: clamp(40px, 5vw, 84px);
+}
+.testimonial__items::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.testimonial__card {
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.06);
+  background-color: var(--state-hover);
+  border-radius: 29px;
+  padding: clamp(25px, 5vw, 35px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 503px;
+  min-width: 400px;
+}
+
+.card__user-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: clamp(20px, 5vw, 28px);
+  margin-bottom: clamp(20px, 5vw, 30px);
+}
+
+.card__user-img {
+  width: 62px;
+  height: 62px;
+  border-radius: 12px;
+}
+
+.card__user-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__user-name {
+  font-weight: 900;
+  font-size: clamp(16px, 5vw, 18px);
+  color: #37474f;
+}
+
+.card__user-job {
+  font-weight: 500;
+  font-size: clamp(15px, 5vw, 18px);
+  color: #37474f;
+  opacity: 0.65;
+}
+
+.card__user-description {
+  font-weight: 500;
+  font-size: clamp(15px, 5vw, 22px);
+  line-height: 173%;
+  color: #7d7d7d;
+  font-size: clamp(15px, 5vw, 18px);
 }/*# sourceMappingURL=main.css.map */
