@@ -11,7 +11,7 @@
 
 @mixin section-title {
     font-weight: 700;
-    font-size: 37px;
+    font-size: clamp(24px, 5vw, 37px);
     line-height: 146%;
     letter-spacing: -0.01em;
     color: var(--colors-black);
@@ -19,9 +19,8 @@
 
 @mixin description {
     font-weight: 500;
-    font-size: 22px;
+    font-size: clamp(18px, 5vw, 22px);
     line-height: 173%;
-    text-align: center;
     color: #7d7d7d;
 }
 
@@ -36,4 +35,16 @@
     font-size: 17px;
     letter-spacing: 0.03em;
     color: var(--colors-primary);
+}
+
+@mixin bc-img {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 37px;
+    height: 37px;
+    top: calc(50% - 17px);
+    left: calc(50% - 18px);
 }

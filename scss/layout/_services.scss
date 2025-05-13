@@ -1,0 +1,132 @@
+.services {
+    padding-top: clamp(50px, 5vw, 122px);
+    padding-bottom: clamp(50px, 5vw, 122px);
+}
+
+.services__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servisec__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -47px;
+    row-gap: 30px;
+}
+
+.services__card {
+    box-shadow: 0 0 77px 0 rgba(0, 0, 0, 0.06);
+    background-color: var(--state-hover);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    margin-left: 47px;
+    max-width: 350px;
+    padding: clamp(24px, 5vw, 30px);
+}
+
+.services__card-img {
+    width: 76px;
+    height: 76px;
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 32px;
+}
+
+.card-1::before {
+    @include bc-img;
+    background-image: url(../../imgs/icons/service-career.svg);
+}
+
+.card-2::before {
+    @include bc-img;
+    background-image: url(../../imgs/icons/service-university.svg);
+}
+
+.card-3::before {
+    @include bc-img;
+    background-image: url(../../imgs/icons/service-visa.svg);
+}
+
+.card-4::before {
+    @include bc-img;
+    background-image: url(../../imgs/icons/sevice-accommodation.svg);
+}
+
+.card-5::before {
+    @include bc-img;
+    background-image: url(../../imgs/icons/service-departure.svg);
+}
+
+.card-1 {
+    background-color: var(--colors-primary);
+}
+
+.card-2 {
+    background: var(--colors-danger);
+}
+
+.card-3 {
+    background: var(--colors-green);
+}
+
+.card-4 {
+    background: var(--colors-blue);
+}
+
+.card-5 {
+    background: var(--colors-orange);
+}
+
+.services__title {
+    @include section-title;
+    margin-bottom: 25px;
+}
+
+.servisec__description {
+    @include description;
+    max-width: 949px;
+    margin-bottom: clamp(50px, 5vw, 110px);
+    text-align: center;
+}
+
+.services__card-title {
+    font-weight: 700;
+    font-size: clamp(18px, 5vw, 24px);
+    line-height: 154%;
+    color: #37474f;
+    margin-bottom: 9px;
+}
+
+.services__card-description {
+    @include description;
+    margin-bottom: 24px;
+}
+
+.services__card-action {
+    @include btn-noborder;
+    transition: all 0.3s ease;
+    display: block;
+    width: fit-content;
+    position: relative;
+    padding: 5px 45px 5px 5px;
+    &:hover {
+        @include btn-hover;
+        color: var(--colors-primary);
+    }
+}
+
+.services__card-action::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../imgs/icons/arrow-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    right: 10px;
+    top: calc(50% - 12px);
+}
